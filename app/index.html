@@ -5,9 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
-    
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="content-left">
+                <div class="slider">
+                    <div class="slider__content">
+                        <img src="./img/product.png" alt="">
+                    </div>
+                    <div class="slider__content">
+                        <img src="./img/slide_2.png" alt="">
+                    </div>
+                    <div class="slider__content">
+                        <img src="./img/slide_3.png" alt="">
+                    </div>
+                    <div class="slider__content">
+                        <img src="./img/slide_4.png" alt="">
+                    </div>
+                    <div class="slider__content">
+                        <img src="./img/slide_5.png" alt="">
+                    </div>
+                    <div class="slider__nav fs-16">
+                        <a href="#" onclick="plusIndex(-1)"><i class="fas fa-angle-left"></i></a>
+                        <a href="#"><i class="far fa-hand-rock"></i></a>
+                        <a href="#" onclick="plusIndex(1)"><i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="slider__pos">
+                        <a href="#" class="position" onclick="currentIndex(1)"></a>
+                        <a href="#" class="position" onclick="currentIndex(2)"></a>
+                        <a href="#" class="position" onclick="currentIndex(3)"></a>
+                        <a href="#" class="position" onclick="currentIndex(4)"></a>
+                        <a href="#" class="position" onclick="currentIndex(5)"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="spec">
+                    <a href="#"><img src="./img/icon-settings.svg" alt=""></a>
+                    <span class="fs-13 fw-600 ff-Titil">SPEC</span>
+                </div>
+                <p class="fs-12 fw-400 txt-clr-black">Model: 505795</p>
+                <p class="fs-29 mt-20 fw-400 lh-35 txt-clr-black">MOMENTUM® <br><span class="fs-24">Wireless Black</span></p>
+                <p class="fs-17 mt-25 fw-400 txt-clr-grey ff-Titil">Wireless headphones with integrated microphone</p>
+                <p class="fs-14 mt-25 fw-400 ls-035 txt-clr-black lh-23">Peak performance with active noise cancelation. 
+                    Sennheiser's new MOMENTUM Wireless - Closed circumaural headphone 
+                    featuring <a href="#">Bluetooth®</a> wireless technology and NoiseGard 
+                    Hybrid active noise cancelation</p>
+                <div class="rating mt-25">
+                    <img src="./img/stars.png" alt="">
+                    <p class="fs-13 txt-clr-grey ff-Titil"><span class="fs-15 fw-400 txt-clr-red">4.25</span> (153 reviews)</p>
+                </div>
+                <div class="price">
+                    <span class="fs-26 fw-600 txt-clr-red ff-Titil">$499.95</span>
+                    <div class="colors">
+                        <span class="fs-12 fw-400 ff-Titil">Choose your colors:</span><br>
+                        <a href="#"><div class="colors__choose"></div></a>
+                        <a href="#"><div class="colors__choose colors__active"></div></a>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="quantiti fs-13 fw-400 ff-Titil">
+                        Quantiti
+                        <input type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                    <button class="btn fs-17 fw-400 ff-Titil lh-35">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
